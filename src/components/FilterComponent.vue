@@ -34,13 +34,6 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-}
-
-.filter-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
   flex-wrap: wrap;
 }
 

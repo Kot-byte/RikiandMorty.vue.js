@@ -126,14 +126,12 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
 .card {
   width: 100%;
   max-width: 600px;
-  width: 600px;
   height: 220px;
   display: flex;
   background: #3c3e44;
@@ -224,12 +222,12 @@ export default {
   .card {
     flex-direction: column;
     height: auto;
-    max-width: 80%;
+    max-width: 90%; /* Уменьшение ширины для планшетов */
   }
 
   .image-container {
     width: 100%;
-    height: 230px;
+    height: 200px; /* Увеличение высоты изображения для планшетов */
     border-radius: 8px 8px 0 0;
   }
 
@@ -240,7 +238,8 @@ export default {
   }
 
   .text-container {
-    width: auto;
+    width: 100%;
+    padding: 12px;
   }
   .section {
     padding: 4px;
@@ -248,6 +247,29 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%; /* Уменьшение ширины для мобильных устройств */
+  }
+
+  .image-container {
+    width: 100%;
+    height: 180px; /* Увеличение высоты изображения для мобильных устройств */
+    border-radius: 8px 8px 0 0;
+  }
+
+  .character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text-container {
+    width: 100%;
+    padding: 10px;
+  }
+
   .character-name {
     font-size: 1.2rem;
   }
